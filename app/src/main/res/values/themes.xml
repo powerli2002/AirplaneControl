@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AirplaneControl" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- 状态栏透明，让内容延伸到状态栏下方 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- 状态栏文字使用浅色，适配深色主题 -->
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- 启用绘制到系统栏下方 -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="Theme.AirplaneControl" parent="Base.Theme.AirplaneControl" />
+
+    <!-- 透明主题用于TransparentActivity -->
+    <style name="Theme.Transparent" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>
